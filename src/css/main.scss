@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;800&family=Karla:ital,wght@0,400;0,500;1,400&family=Staatliches&display=swap');
+
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0B2434;
+    background-image: linear-gradient(to right, #EFEFBB, #D4D3DD);
+    background-image: linear-gradient(to right, #C04848, #480048);
+    background-image: linear-gradient(to right, #d53369, #cbad6d);
+}
+
+.win{
+    font-size: 4rem;
+    font-family: 'Karla';
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    height: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    // border: 1px solid black;
+    height: 95vh;
+    width: 80vh;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    box-shadow: 6px -5px 68px -18px rgba(0,0,0,0.75);
+
+    .rolls{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 10rem;
+        justify-content: space-between;
+        width: 70vh;
+
+        .icons{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        
+        .count{
+            @include flex();
+            padding: .5rem .5rem;
+            border-radius: 8px;
+            color: white;
+            font-family: 'Karla';
+            font-weight: 900;
+            background-color: transparent;
+            background-color: #ff5735;
+            text-align: left;
+            font-size: 13px;
+            width: 6rem;
+        }
+    }
+
+    .heading{
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'Karla';
+        font-weight: 600;
+        text-align: center;
+        height: 15vh;
+    }
+    
+    .instructions{
+        margin: 2rem 3.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: 'Inter';
+        font-weight: 200;
+    }
+    
+    .dices{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+
+        .dice{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Karla;
+            font-weight: 700;
+            height: 5rem;
+            width: 5rem;
+            font-size: 3rem;
+            border-radius: 3.81px;
+            box-shadow: 0px 2px 2px 0px #00000026;
+            background: #FFFFFF;
+            color: black;
+            cursor: pointer;
+        }
+    }
+    
+    .button{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 60vw;
+
+        .reset--btn{
+           width: 12rem;
+           height: 6rem;
+           font-size: 2rem;
+           font-weight: 700;
+           border-radius: 3px;
+           border: none;
+           background-color: #ff5735;
+           color: white;
+           font-family: 'Karla';  
+           box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002E;  
+           cursor: pointer;
+       }
+        button{
+           width: 12rem;
+           height: 6rem;
+           font-size: 2rem;
+           font-weight: 700;
+           border-radius: 3px;
+           border: none;
+           background-color: #5035FF;
+           color: white;
+           font-family: 'Karla';  
+           box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002E;  
+           cursor: pointer;
+       }
+
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 240px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 95vh;
+        width: 95vw;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+        box-shadow: 1px 0.5px 16px black;
+    }
+
+    .container .dices .dice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Karla;
+        font-weight: 700;
+        height: 2rem;
+        width: 2rem;
+        font-size: 1rem;
+        border-radius: 3.81px;
+        box-shadow: 0px 2px 2px 0px #00000026;
+        background: #FFFFFF;
+        color: black;
+        cursor: pointer;
+}
+
+    .container .rolls{
+        width: 87vw;
+        gap: 0.1rem 2rem;
+
+    }
+
+    .container .instructions {
+        margin: 1rem 1.5rem;
+        text-align: center;
+        font-size: 9px;
+        font-family: 'Inter';
+        font-weight: 200;
+    }
+
+    .container .rolls .count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        border-radius: 3px;
+        color: white;
+        font-family: 'Karla';
+        font-weight: 900;
+        background-color: transparent;
+        background-color: #ff5735;
+        text-align: left;
+        font-size: 8px;
+        width: 4rem;
+        height: 1rem;
+    }
+
+    .container .dices{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: .5rem;
+        }
+        
+        .container .button{
+            display: flex;
+            justify-content: space-evenly;
+            width: 67vw;
+            gap: 1rem;
+        }
+
+        .win {
+            font-size: 2rem;
+            font-family: 'Karla';
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+
+        .container .button .reset--btn {
+            width: 12rem;
+            height: 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 3px;
+            border: none;
+            background-color: #ff5735;
+            color: white;
+            font-family: 'Karla';
+            box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
+            cursor: pointer;
+        }
+
+        .container .button button {
+            width: 12rem;
+            height: 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 3px;
+            border: none;
+            background-color: #5035FF;
+            color: white;
+            font-family: 'Karla';
+            box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
+            cursor: pointer;
+        }
+}
+
+@media (min-width: 241px) and (max-width: 362px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 95vh;
+        width: 96vw;
+        border-radius: 10px;
+    }
+
+    .container .dices .dice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Karla;
+        font-weight: 700;
+        height: 3rem;
+        width: 3rem;
+        font-size: 2rem;
+        border-radius: 3.81px;
+        box-shadow: 0px 2px 2px 0px #00000026;
+        background: #FFFFFF;
+        color: black;
+        cursor: pointer;
+}
+
+    .container .rolls{
+        width: 78vw;
+        gap: 1rem 7rem;
+    }
+
+    .container .dices{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: .5rem;
+        }
+        
+        .container .button{
+            display: flex;
+            justify-content: space-evenly;
+            width: 67vw;
+            gap: 1rem;
+        }
+
+        .win {
+            font-size: 4rem;
+            font-family: 'Karla';
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+}
+
+@media (min-width: 363px) and (max-width: 500px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 98vh;
+        width: 92vw;
+        border-radius: 10px;
+    }
+
+    .container .instructions {
+        margin: 2rem 3.5rem;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Inter';
+        font-weight: 200;
+    }
+
+    .container .rolls .count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0.5rem;
+        border-radius: 8px;
+        color: white;
+        font-family: 'Karla';
+        font-weight: 900;
+        background-color: transparent;
+        background-color: #ff5735;
+        text-align: left;
+        font-size: 19px;
+        width: 9rem;
+    }
+
+    .container .dices .dice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Karla;
+        font-weight: 700;
+        height: 3.5rem;
+        width: 3.5rem;
+        font-size: 2rem;
+        border-radius: 3.81px;
+        box-shadow: 0px 2px 2px 0px #00000026;
+        background: #FFFFFF;
+        color: black;
+        cursor: pointer;
+}
+
+    .container .rolls{
+        width: 86vw;
+        gap: 1rem 9rem;
+    }
+
+    .container .dices{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: .5rem;
+        }
+        
+        .container .button{
+            display: flex;
+            justify-content: space-evenly;
+            width: 67vw;
+            gap: 1rem;
+        }
+    
+
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 96vh;
+        width: 88vw;
+        border-radius: 10px;
+    }
+
+    .container .dices .dice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Karla;
+        font-weight: 700;
+        height: 4.5rem;
+        width: 4.5rem;
+        font-size: 3rem;
+        border-radius: 3.81px;
+        box-shadow: 0px 2px 2px 0px #00000026;
+        background: #FFFFFF;
+        color: black;
+        cursor: pointer;
+}
+
+    .container .rolls{
+        width: 70vw;
+    }
+
+    .container .instructions{
+        font-size: 2rem;
+    }
+
+    .container .dices{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .container .button{
+            display: flex;
+            justify-content: space-evenly;
+            width: 67vw;
+            gap: 1rem;
+        }
+
+    .container .button .reset--btn {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .container .button button {
+        width: 12rem;
+        height: 6rem;
+    }
+
+    .container .rolls .count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0.5rem;
+        border-radius: 8px;
+        color: white;
+        font-family: 'Karla';
+        font-weight: 900;
+        background-color: transparent;
+        background-color: #ff5735;
+        text-align: left;
+        font-size: 1rem;
+        width: 8rem;
+    }
+
+    
+
+}
+
+// @media (min-width: 700px) and (max-width: 1000px) {
+
+//     .container {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         height: 96vh;
+//         width: 88vw;
+//         border-radius: 10px;
+//     }
+
+//     .container .dices .dice{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         font-family: Karla;
+//         font-weight: 700;
+//         height: 6rem;
+//         width: 6rem;
+//         font-size: 5rem;
+//         border-radius: 3.81px;
+//         box-shadow: 0px 2px 2px 0px #00000026;
+//         background: #FFFFFF;
+//         color: black;
+//         cursor: pointer;
+// }
+
+
+// .container .instructions {
+//     font-size: 2rem;
+// }
+
+// .container .button .reset--btn {
+//     height: 6rem;
+//     width: 20rem;
+//     font-size: 3rem;
+// }
+
+// .container .button button {
+//     height: 6rem;
+//     width: 20rem;
+//     font-size: 3rem;
+
+// }
+
+//     .container .rolls{
+//         width: 75vw;
+//     }
+
+//     .container .dices{
+//             display: grid;
+//             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+//             gap: 1rem;
+//         }
+        
+//     .container .button{
+//         display: flex;
+//         justify-content: space-evenly;
+//         width: 67vw;
+//         gap: 1rem;
+//     }
+    
+// .container .rolls .count {
+//     height: 3rem;
+//     width: 9rem;
+//     font-size: 1.3rem;
+// }
+
+
+// }
