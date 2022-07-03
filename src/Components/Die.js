@@ -7,7 +7,7 @@ export default function Die(props){
     const onHold = {
         backgroundColor : props.isHeld ? "greenyellow" : props.css ? "white" : "darkgray",
         color : props.css ? "black" : "white",
-        textShadow : props.isHeld ?  ".5px 1px 22px black" : ""
+        textShadow : props.isHeld && !props.css ?  ".5px .5px 9px gray" : ""
 
     }
 

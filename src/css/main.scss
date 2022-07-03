@@ -13,10 +13,11 @@
 body {
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background: #0B2434;
+    min-height: 110vh;
+    height: 120vh;
     background-image: linear-gradient(to right, #EFEFBB, #D4D3DD);
     background-image: linear-gradient(to right, #C04848, #480048);
     background-image: linear-gradient(to right, #d53369, #cbad6d);
@@ -35,9 +36,9 @@ body {
 .container{
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
     justify-content: space-evenly;
     align-items: center;
-    // border: 1px solid black;
     height: 95vh;
     width: 80vh;
     border-radius: 10px;
@@ -87,7 +88,7 @@ body {
     .instructions{
         margin: 2rem 3.5rem;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-family: 'Inter';
         font-weight: 200;
     }
@@ -289,6 +290,14 @@ body {
         cursor: pointer;
 }
 
+    // .container .button .reset--btn {
+    //     height: 4rem;
+    // }
+
+    // .container .button button {
+    //     height: 4rem;
+    // }
+
     .container .rolls{
         width: 78vw;
         gap: 1rem 7rem;
@@ -369,7 +378,7 @@ body {
 }
 
     .container .rolls{
-        width: 86vw;
+        width: 75vw;
         gap: 1rem 9rem;
     }
 
@@ -386,6 +395,13 @@ body {
             gap: 1rem;
         }
     
+    .container .button .reset--btn {
+        height: 4rem;
+    }
+
+    .container .button button {
+        height: 4rem;
+    }
 
 }
 
@@ -421,7 +437,7 @@ body {
     }
 
     .container .instructions{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .container .dices{
@@ -463,8 +479,15 @@ body {
         width: 8rem;
     }
 
-    
+}
 
+.footer{
+    @include flex();
+    height: 2rem;
+    width: 100vw;
+    font-family: 'Inter';
+    margin-top: auto;
+    background-color: white ;
 }
 
 // @media (min-width: 700px) and (max-width: 1000px) {

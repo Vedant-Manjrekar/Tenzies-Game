@@ -10,14 +10,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  background: #0B2434;
+  min-height: 110vh;
+  height: 120vh;
   background-image: -webkit-gradient(linear, left top, right top, from(#EFEFBB), to(#D4D3DD));
   background-image: linear-gradient(to right, #EFEFBB, #D4D3DD);
   background-image: -webkit-gradient(linear, left top, right top, from(#C04848), to(#480048));
@@ -44,6 +48,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 2rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -123,7 +128,7 @@ body {
 .container .instructions {
   margin: 2rem 3.5rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: 'Inter';
   font-weight: 200;
 }
@@ -468,7 +473,7 @@ body {
     cursor: pointer;
   }
   .container .rolls {
-    width: 86vw;
+    width: 75vw;
     gap: 1rem 9rem;
   }
   .container .dices {
@@ -487,6 +492,12 @@ body {
             justify-content: space-evenly;
     width: 67vw;
     gap: 1rem;
+  }
+  .container .button .reset--btn {
+    height: 4rem;
+  }
+  .container .button button {
+    height: 4rem;
   }
 }
 
@@ -532,7 +543,7 @@ body {
     width: 70vw;
   }
   .container .instructions {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .container .dices {
     display: -ms-grid;
@@ -580,5 +591,22 @@ body {
     font-size: 1rem;
     width: 8rem;
   }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 100vw;
+  font-family: 'Inter';
+  margin-top: auto;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */
