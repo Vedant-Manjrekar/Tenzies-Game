@@ -99,7 +99,7 @@ export default function App() {
         // save array to localStorage.
         localStorage.setItem("top-score", JSON.stringify(scoreArray));
 
-        // setTopScore(scoreArray)
+        setTopScore(scoreArray)
         // console.log(scoreArray);
 
       }
