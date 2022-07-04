@@ -37,8 +37,12 @@ export default function App() {
     // pushing the value obtained from local storage into the array.
     localStorage.getItem('top-score') ? topScoreArray.push(...JSON.parse(localStorage.getItem("top-score"))) : localStorage.setItem("top-score", "");
 
+    
     // setting topScore array to the minimum value present in setTopScore array.
     setTopScore(Math.min(...topScoreArray))
+
+    // set topscore to 0 if localstorage is empty.
+    !localStorage.getItem('top-score') && setTopScore(0);
 
   }, [dice])
 
