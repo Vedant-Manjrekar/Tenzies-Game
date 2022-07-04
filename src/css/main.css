@@ -375,6 +375,18 @@ body {
     color: black;
     cursor: pointer;
   }
+  .container .button .reset--btn {
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .container .button button {
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .container .instructions {
+    margin: 2rem 0.5rem;
+    font-size: 1.5rem;
+  }
   .container .rolls {
     width: 78vw;
     gap: 1rem 7rem;
