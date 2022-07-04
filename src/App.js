@@ -35,7 +35,7 @@ export default function App() {
     let topScoreArray = []
 
     // pushing the value obtained from local storage into the array.
-    localStorage.getItem('top-score') && topScoreArray.push(...JSON.parse(localStorage.getItem("top-score")))
+    localStorage.getItem('top-score') != "" && topScoreArray.push(...JSON.parse(localStorage.getItem("top-score")))
 
     // setting topScore array to the minimum value present in setTopScore array.
     setTopScore(Math.min(...topScoreArray))
