@@ -22,17 +22,17 @@ body {
           align-items: center;
   min-height: 110vh;
   height: 120vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(#EFEFBB), to(#D4D3DD));
-  background-image: linear-gradient(to right, #EFEFBB, #D4D3DD);
-  background-image: -webkit-gradient(linear, left top, right top, from(#C04848), to(#480048));
-  background-image: linear-gradient(to right, #C04848, #480048);
+  background-image: -webkit-gradient(linear, left top, right top, from(#efefbb), to(#d4d3dd));
+  background-image: linear-gradient(to right, #efefbb, #d4d3dd);
+  background-image: -webkit-gradient(linear, left top, right top, from(#c04848), to(#480048));
+  background-image: linear-gradient(to right, #c04848, #480048);
   background-image: -webkit-gradient(linear, left top, right top, from(#d53369), to(#cbad6d));
   background-image: linear-gradient(to right, #d53369, #cbad6d);
 }
 
 .win {
   font-size: 4rem;
-  font-family: 'Karla';
+  font-family: "Karla";
   font-weight: 600;
   text-align: center;
   margin-bottom: 4rem;
@@ -55,10 +55,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 95vh;
+  height: 89vh;
   width: 80vh;
   border-radius: 10px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   -webkit-box-shadow: 6px -5px 68px -18px rgba(0, 0, 0, 0.75);
           box-shadow: 6px -5px 68px -18px rgba(0, 0, 0, 0.75);
 }
@@ -66,6 +66,7 @@ body {
 .container .rolls {
   display: -ms-grid;
   display: grid;
+  padding: 1rem 0;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 1rem 10rem;
@@ -96,10 +97,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 8px;
   color: white;
-  font-family: 'Karla';
+  font-family: "Karla";
   font-weight: 900;
   background-color: transparent;
   background-color: #ff5735;
@@ -119,7 +120,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-family: 'Karla';
+  font-family: "Karla";
   font-weight: 600;
   text-align: center;
   height: 15vh;
@@ -128,8 +129,8 @@ body {
 .container .instructions {
   margin: 2rem 3.5rem;
   text-align: center;
-  font-size: 2rem;
-  font-family: 'Inter';
+  font-size: 2.5vw;
+  font-family: "Inter";
   font-weight: 200;
 }
 
@@ -153,13 +154,13 @@ body {
           align-items: center;
   font-family: Karla;
   font-weight: 700;
-  height: 5rem;
-  width: 5rem;
-  font-size: 3rem;
+  height: 7vw;
+  width: 7vw;
+  font-size: 3vw;
   border-radius: 3.81px;
   -webkit-box-shadow: 0px 2px 2px 0px #00000026;
           box-shadow: 0px 2px 2px 0px #00000026;
-  background: #FFFFFF;
+  background: #ffffff;
   color: black;
   cursor: pointer;
 }
@@ -173,35 +174,36 @@ body {
           justify-content: center;
   gap: 1rem;
   width: 60vw;
+  padding: 2rem 0;
 }
 
 .container .button .reset--btn {
-  width: 12rem;
-  height: 6rem;
+  width: 17vw;
+  height: 7vw;
   font-size: 2rem;
   font-weight: 700;
   border-radius: 3px;
   border: none;
   background-color: #ff5735;
   color: white;
-  font-family: 'Karla';
-  -webkit-box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002E;
-          box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002E;
+  font-family: "Karla";
+  -webkit-box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
+          box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
   cursor: pointer;
 }
 
 .container .button button {
-  width: 12rem;
-  height: 6rem;
+  width: 17vw;
+  height: 7vw;
   font-size: 2rem;
   font-weight: 700;
   border-radius: 3px;
   border: none;
-  background-color: #5035FF;
+  background-color: #5035ff;
   color: white;
-  font-family: 'Karla';
-  -webkit-box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002E;
-          box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002E;
+  font-family: "Karla";
+  -webkit-box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
+          box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
   cursor: pointer;
 }
 
@@ -223,7 +225,7 @@ body {
     height: 95vh;
     width: 95vw;
     border-radius: 10px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     -webkit-box-shadow: 1px 0.5px 16px black;
             box-shadow: 1px 0.5px 16px black;
   }
@@ -245,7 +247,7 @@ body {
     border-radius: 3.81px;
     -webkit-box-shadow: 0px 2px 2px 0px #00000026;
             box-shadow: 0px 2px 2px 0px #00000026;
-    background: #FFFFFF;
+    background: #ffffff;
     color: black;
     cursor: pointer;
   }
@@ -257,7 +259,7 @@ body {
     margin: 1rem 1.5rem;
     text-align: center;
     font-size: 9px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 200;
   }
   .container .rolls .count {
@@ -273,7 +275,7 @@ body {
     padding: 0.5rem;
     border-radius: 3px;
     color: white;
-    font-family: 'Karla';
+    font-family: "Karla";
     font-weight: 900;
     background-color: transparent;
     background-color: #ff5735;
@@ -287,7 +289,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: .5rem;
+    gap: 0.5rem;
   }
   .container .button {
     display: -webkit-box;
@@ -301,7 +303,7 @@ body {
   }
   .win {
     font-size: 2rem;
-    font-family: 'Karla';
+    font-family: "Karla";
     font-weight: 600;
     text-align: center;
     margin-bottom: 2rem;
@@ -316,7 +318,7 @@ body {
     border: none;
     background-color: #ff5735;
     color: white;
-    font-family: 'Karla';
+    font-family: "Karla";
     -webkit-box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
             box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
     cursor: pointer;
@@ -328,9 +330,9 @@ body {
     font-weight: 700;
     border-radius: 3px;
     border: none;
-    background-color: #5035FF;
+    background-color: #5035ff;
     color: white;
-    font-family: 'Karla';
+    font-family: "Karla";
     -webkit-box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
             box-shadow: 0px 3.1999998092651367px 7.679999828338623px 0px #0000002e;
     cursor: pointer;
@@ -349,8 +351,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 95vh;
-    width: 96vw;
+    width: 85vw;
     border-radius: 10px;
   }
   .container .dices .dice {
@@ -365,38 +366,48 @@ body {
             align-items: center;
     font-family: Karla;
     font-weight: 700;
-    height: 3rem;
-    width: 3rem;
+    height: 10vw;
+    width: 10vw;
     font-size: 2rem;
     border-radius: 3.81px;
     -webkit-box-shadow: 0px 2px 2px 0px  #00000026;
             box-shadow: 0px 2px 2px 0px  #00000026;
-    background: #FFFFFF;
+    background: #ffffff;
     color: black;
     cursor: pointer;
   }
   .container .button .reset--btn {
-    height: 4rem;
+    width: 5rem;
+    height: 6vh;
     font-size: 1.5rem;
   }
   .container .button button {
-    height: 4rem;
+    width: 5rem;
+    height: 6vh;
     font-size: 1.5rem;
   }
   .container .instructions {
     margin: 2rem 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .container .rolls {
     width: 78vw;
-    gap: 1rem 7rem;
+    gap: 1rem 4rem;
+  }
+  .container .rolls .count {
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: 1rem;
   }
   .container .dices {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: .5rem;
+    gap: 1rem;
   }
   .container .button {
     display: -webkit-box;
@@ -410,7 +421,7 @@ body {
   }
   .win {
     font-size: 4rem;
-    font-family: 'Karla';
+    font-family: "Karla";
     font-weight: 600;
     text-align: center;
     margin-bottom: 2rem;
@@ -430,15 +441,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 98vh;
     width: 92vw;
     border-radius: 10px;
   }
   .container .instructions {
     margin: 2rem 3.5rem;
     text-align: center;
-    font-size: 1.8rem;
-    font-family: 'Inter';
+    font-size: 1.4rem;
+    font-family: "Inter";
     font-weight: 200;
   }
   .container .rolls .count {
@@ -454,7 +464,7 @@ body {
     padding: 0.5rem 0.5rem;
     border-radius: 8px;
     color: white;
-    font-family: 'Karla';
+    font-family: "Karla";
     font-weight: 900;
     background-color: transparent;
     background-color: #ff5735;
@@ -474,26 +484,26 @@ body {
             align-items: center;
     font-family: Karla;
     font-weight: 700;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 8vw;
+    width: 8vw;
     font-size: 2rem;
     border-radius: 3.81px;
     -webkit-box-shadow: 0px 2px 2px 0px  #00000026;
             box-shadow: 0px 2px 2px 0px  #00000026;
-    background: #FFFFFF;
+    background: #ffffff;
     color: black;
     cursor: pointer;
   }
   .container .rolls {
     width: 75vw;
-    gap: 1rem 9rem;
+    gap: 1rem 6rem;
   }
   .container .dices {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: .5rem;
+    gap: 0.5rem;
   }
   .container .button {
     display: -webkit-box;
@@ -506,10 +516,14 @@ body {
     gap: 1rem;
   }
   .container .button .reset--btn {
-    height: 4rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    width: 23vw;
   }
   .container .button button {
-    height: 4rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    width: 23vw;
   }
 }
 
@@ -525,34 +539,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 96vh;
-    width: 88vw;
     border-radius: 10px;
-  }
-  .container .dices .dice {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: Karla;
-    font-weight: 700;
-    height: 4.5rem;
-    width: 4.5rem;
-    font-size: 3rem;
-    border-radius: 3.81px;
-    -webkit-box-shadow: 0px 2px 2px 0px  #00000026;
-            box-shadow: 0px 2px 2px 0px  #00000026;
-    background: #FFFFFF;
-    color: black;
-    cursor: pointer;
-  }
-  .container .rolls {
-    width: 70vw;
   }
   .container .instructions {
     font-size: 1.5rem;
@@ -564,23 +551,11 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
   }
-  .container .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 67vw;
-    gap: 1rem;
-  }
   .container .button .reset--btn {
-    width: 12rem;
-    height: 6rem;
+    font-size: 1rem;
   }
   .container .button button {
-    width: 12rem;
-    height: 6rem;
+    font-size: 1rem;
   }
   .container .rolls .count {
     display: -webkit-box;
@@ -595,7 +570,7 @@ body {
     padding: 0.5rem 0.5rem;
     border-radius: 8px;
     color: white;
-    font-family: 'Karla';
+    font-family: "Karla";
     font-weight: 900;
     background-color: transparent;
     background-color: #ff5735;
@@ -617,7 +592,7 @@ body {
           align-items: center;
   height: 2rem;
   width: 100vw;
-  font-family: 'Inter';
+  font-family: "Inter";
   margin-top: auto;
   background-color: white;
 }
